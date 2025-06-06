@@ -64,7 +64,7 @@ const Navbar = () => {
           className="flex flex-1 items-center justify-center md:items-stretch md:justify-start"
         >
           {/* <!-- Logo --> */}
-          <Link className="flex flex-shrink-0 items-center" href="/index.html">
+          <Link className="flex flex-shrink-0 items-center" href="/">
             <Image
               className="h-10 w-auto"
               src={ logo }
@@ -189,6 +189,7 @@ const Navbar = () => {
                   role="menuitem"
                   tabIndex="-1"
                   id="user-menu-item-0"
+                  onClick={ () => setIsProfileMenuOpen(false) }
                   >Your Profile
                 </Link>
                 <Link
@@ -197,6 +198,7 @@ const Navbar = () => {
                   role="menuitem"
                   tabIndex="-1"
                   id="user-menu-item-2"
+                  onClick={ () => setIsProfileMenuOpen(false) }
                   >Saved Properties
                 </Link>
                 <button
