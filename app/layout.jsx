@@ -5,6 +5,7 @@ import { ToastContainer } from 'react-toastify';
 import { GlobeProvider } from '@/context/GlobalContext';
 import 'react-toastify/dist/ReactToastify.css';
 import "@/assests/styles/globals.css";
+import 'photoswipe/dist/photoswipe.css';
 
 export const metadata = {
     title: "Property Pulse",
