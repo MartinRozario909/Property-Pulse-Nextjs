@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Gallery, Item } from "react-photoswipe-gallery";
 
 const PropertyImages = ({ images }) => {
-    return
+    return (
     <Gallery>
     <section className="bg-blue-50 p-4">
         <div className="container mx-auto">
@@ -59,7 +59,7 @@ const PropertyImages = ({ images }) => {
             ) }
         </div>
     </section>
-    </Gallery>;
+    </Gallery>)
 };
  
 export default PropertyImages;

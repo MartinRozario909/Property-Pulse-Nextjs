@@ -19,7 +19,7 @@ async function deleteMessage(messageId) {
         throw new Error('Unauthorized');
     }
 
-    await message.deletOne();
+    await message.deleteOne();
 
     revalidatePath('/', 'layout');
 }

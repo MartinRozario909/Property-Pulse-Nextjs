@@ -1,6 +1,6 @@
 'use client';
 import { useEffect } from "react";
-import { useActionState } from "react-dom";
+import { useActionState } from "react";
 import { useSession } from "next-auth/react";
 import { toast } from "react-toastify";
 import addMessage from "@/app/actions/addMessage";

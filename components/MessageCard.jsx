@@ -33,13 +33,13 @@ const MessageCard = ({ message }) => {
     return (
         <div className="relative bg-white p-4 rounded-md shadow-md border border-gray-200">
             { !isRead && (
-                <div className="absolute top-2 right-2 bg-yellow-500 text-white px-2 py-1 rounded-md"></div>
+                <div className="absolute top-2 right-2 bg-yellow-500 text-white px-2 py-2 rounded-md"></div>
             ) }
         <h2 className="text-xl mb-4">
             <span className="font-bold">Property Inquiry:</span>{' '}
             { message.property.name }
         </h2>
-        <p className="text-gray-700"></p>
+        <p className="text-gray-700">{message.body}</p>
         <ul className="mt-4">
             <li>
                 <strong>Reply Email:</strong>{' '}
@@ -59,7 +59,7 @@ const MessageCard = ({ message }) => {
             </li>
         </ul>
         <button onClick={handleReadClick}
-        className="mt-4 mr-3 bg-bluee-500 text-white py-1 px-3 rounded-md">
+        className="mt-4 mr-3 bg-blue-500 text-white py-1 px-3 rounded-md">
             { isRead ? 'Mark As New' : 'Mark As Read'}
         </button>
         <button onClick={handleDeleteClick}
